@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app= "demoApp">
+<head>
+<meta charset="ISO-8859-1">
+<title>SSDI Demo Project</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.js"></script>
+<script src="/js/controller.js"></script>
+<body>
+<div ng-controller = "demoCtrl">
+
+<button ng-click="myFunc()">Click to view the data</button>
+<h2></h2>
+<table class="table" style="border: solid;">
+   <tr>
+       <th>Student ID
+       </th>
+       <th>Student Name
+       </th>
+       <th>Student Age
+       </th>
+    </tr>
+    <tr ng-repeat="n in lists">
+        <td>{{n.sid}}
+        </td>
+        <td>{{n.name}}
+        </td>
+        <td>{{n.age}}
+        </td>
+
+   </tr>
+</table>
+</div>            
+</body>
+</html>
